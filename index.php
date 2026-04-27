@@ -49,7 +49,7 @@ include 'includes/navbar.php';
         </div>
         <div class="relative h-96 overflow-hidden rounded-3xl shadow-2xl group" id="about-image-container">
           <img src="/public/images/team-aircraft.jpg" alt="About Transafrican Air" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
+          <div class="absolute inset-0 bg-linear-to-t from-black/60 to-transparent flex items-end p-8">
               <p class="text-white font-bold italic">Dedicated Professionals, Mission-Ready</p>
           </div>
         </div>
