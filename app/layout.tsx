@@ -90,7 +90,6 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="sitemap" href={`${siteConfig.url}/sitemap.xml`} />
-        <meta name="theme-color" content="#0066cc" />
       </head>
       <body className={`font-sans antialiased`} suppressHydrationWarning>
         <Header />
