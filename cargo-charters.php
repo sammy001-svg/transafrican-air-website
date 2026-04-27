@@ -1,5 +1,6 @@
 <?php 
 $pageTitle = "Cargo Charter Solutions - Transafrican Air";
+$pageDescription = "Reliable air cargo charter solutions across Africa, including humanitarian aid, live animal transport, and perishable goods.";
 include 'includes/header.php'; 
 include 'includes/navbar.php'; 
 ?>

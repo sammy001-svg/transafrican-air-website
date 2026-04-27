@@ -1,5 +1,6 @@
 <?php 
 $pageTitle = "Transafrican Air - Premium Aircraft Charter Services Across Africa";
+$pageDescription = "Transafrican Air provides expert passenger and cargo charter solutions across Africa, specializing in government, humanitarian aid, and private jet services.";
 include 'includes/header.php'; 
 include 'includes/navbar.php'; 
 ?>

@@ -1,5 +1,6 @@
 <?php 
 $pageTitle = "Private Charter Solutions - Transafrican Air";
+$pageDescription = "Experience the peak of aviation with our private jet charters. Luxury travel, official visits, and wildlife trips tailored to your schedule.";
 include 'includes/header.php'; 
 include 'includes/navbar.php'; 
 ?>
