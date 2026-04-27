@@ -4,8 +4,9 @@ PassengerAppType node
 PassengerStartupFile server.js
 
 # Allow Next.js static assets and files to be served directly if they exist
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  # Route traffic to the Next.js Passenger app
-  RewriteRule ^(.*)$ - [E=PASSENGER_APP_ENV:production]
-</IfModule>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^server.js$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . server.js [L]

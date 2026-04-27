@@ -5,5 +5,6 @@ deployment:
     - /bin/cp -R * $DEPLOYPATH
     - /bin/cp -f .htaccess $DEPLOYPATH/ 2>/dev/null || true
     - /bin/cp -f .env* $DEPLOYPATH/ 2>/dev/null || true
-    - cd $DEPLOYPATH && npm install
-    - cd $DEPLOYPATH && npm run build
+    - cd $DEPLOYPATH && npm install --production=false
+    - cd $DEPLOYPATH && NODE_ENV=production npm run build
+    - echo "Deployment complete at $(date)" > $DEPLOYPATH/deployment_last_run.txt
