@@ -32,9 +32,9 @@
         <h4 class="text-sm font-bold mb-6 text-slate-300 uppercase">Private Charter</h4>
         <ul class="space-y-3">
           <li><a href="/private-jet-charter.php" class="text-sm text-slate-400 hover:text-primary transition">Private Jet Charter</a></li>
-          <li><a href="/official-trips" class="text-sm text-slate-400 hover:text-primary transition">Official Trips</a></li>
-          <li><a href="/wildlife-trips" class="text-sm text-slate-400 hover:text-primary transition">Wildlife Trips</a></li>
-          <li><a href="/helicopters" class="text-sm text-slate-400 hover:text-primary transition">Helicopters</a></li>
+          <li><a href="/official-trips.php" class="text-sm text-slate-400 hover:text-primary transition">Official Trips</a></li>
+          <li><a href="/wildlife-trips.php" class="text-sm text-slate-400 hover:text-primary transition">Wildlife Trips</a></li>
+          <li><a href="/helicopters.php" class="text-sm text-slate-400 hover:text-primary transition">Helicopters</a></li>
         </ul>
       </div>
 
@@ -42,9 +42,9 @@
       <div class="md:border-r border-slate-700 md:px-6">
         <h4 class="text-sm font-bold mb-6 text-slate-300 uppercase">Group Charter</h4>
         <ul class="space-y-3">
-          <li><a href="/acmi-leasing" class="text-sm text-slate-400 hover:text-primary transition">ACMI Leasing</a></li>
-          <li><a href="/events-charter-concepts" class="text-sm text-slate-400 hover:text-primary transition">Events Charter</a></li>
-          <li><a href="/sports-teams-charter" class="text-sm text-slate-400 hover:text-primary transition">Sports Teams Charter</a></li>
+          <li><a href="/acmi-leasing.php" class="text-sm text-slate-400 hover:text-primary transition">ACMI Leasing</a></li>
+          <li><a href="/events-charter-concepts.php" class="text-sm text-slate-400 hover:text-primary transition">Events Charter</a></li>
+          <li><a href="/sports-teams-charter.php" class="text-sm text-slate-400 hover:text-primary transition">Sports Teams Charter</a></li>
         </ul>
       </div>
 
@@ -52,11 +52,11 @@
       <div class="md:border-r border-slate-700 md:px-6">
         <h4 class="text-sm font-bold mb-6 text-slate-300 uppercase">Cargo Charter</h4>
         <ul class="space-y-3">
-          <li><a href="/humanitarian-aid" class="text-sm text-slate-400 hover:text-primary transition">Humanitarian & Relief</a></li>
-          <li><a href="/live-animal-transport" class="text-sm text-slate-400 hover:text-primary transition">Live Animal Transport</a></li>
-          <li><a href="/perishable-cargo" class="text-sm text-slate-400 hover:text-primary transition">Perishable</a></li>
-          <li><a href="/pharma-cargo" class="text-sm text-slate-400 hover:text-primary transition">Pharma</a></li>
-          <li><a href="/automotive-cargo" class="text-sm text-slate-400 hover:text-primary transition">Automotive</a></li>
+          <li><a href="/humanitarian-aid.php" class="text-sm text-slate-400 hover:text-primary transition">Humanitarian & Relief</a></li>
+          <li><a href="/live-animal-transport.php" class="text-sm text-slate-400 hover:text-primary transition">Live Animal Transport</a></li>
+          <li><a href="/perishable-cargo.php" class="text-sm text-slate-400 hover:text-primary transition">Perishable</a></li>
+          <li><a href="/pharma-cargo.php" class="text-sm text-slate-400 hover:text-primary transition">Pharma</a></li>
+          <li><a href="/automotive-cargo.php" class="text-sm text-slate-400 hover:text-primary transition">Automotive</a></li>
         </ul>
       </div>
 
