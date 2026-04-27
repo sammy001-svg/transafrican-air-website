@@ -11,7 +11,7 @@ $resourcesLinks = [
     ["title" => "Careers", "href" => "/careers.php"],
     ["title" => "Privacy Policy", "href" => "/privacy-policy.php"],
     ["title" => "Terms & Conditions", "href" => "/terms-and-conditions.php"],
-    ["title" => "Company Profile", "href" => "/public/company-profile.pdf"],
+    ["title" => "Company Profile", "href" => "/company-profile.php"],
 ];
 ?>
 
