@@ -1,0 +1,39 @@
+# Robots.txt for Transafrican Air Website
+# Guides search engines on crawling and indexing
+
+# Allow all bots to crawl public pages
+User-agent: *
+Allow: /
+Allow: /api/
+Allow: /public/
+
+# Disallow private/admin paths
+Disallow: /admin/
+Disallow: /api/admin/
+Disallow: /api/internal/
+Disallow: /.next/
+Disallow: /node_modules/
+Disallow: /_next/
+
+# Specific rules for Googlebot for faster crawling
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Specific rules for other bots with reasonable crawl delay
+User-agent: *
+Crawl-delay: 1
+Request-rate: 30/60
+
+# Point to sitemap
+Sitemap: https://transafricanair.com/sitemap.xml
+
+# Do not index query parameters
+Disallow: /?*
+Disallow: /*?*
+Disallow: *?*
+
+# Do not index these file types
+Disallow: *.pdf$
+Disallow: *.doc$
+Disallow: *.docx$
