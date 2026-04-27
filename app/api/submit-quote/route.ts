@@ -1,19 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createClient } from '@supabase/supabase-js';
+import pool from '@/lib/db';
 import { Resend } from 'resend';
 import { allQuoteSchemas } from '@/lib/validation/quote-schemas';
 import { generateCompanyNotificationEmail, generateClientConfirmationEmail } from '@/lib/email/templates';
 import { verifyCSRFToken } from '@/lib/security/csrf';
-
-// Initialize Supabase
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
-
-if (!supabaseUrl || !supabaseKey) {
-  throw new Error('Missing Supabase environment variables');
-}
-
-const supabase = createClient(supabaseUrl, supabaseKey);
 
 // Initialize Resend
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -109,37 +99,42 @@ export async function POST(request: NextRequest) {
     const referenceNumber = generateReferenceNumber();
 
     // Store in database
-    const { error: insertError } = await supabase
-      .from('quote_submissions')
-      .insert([
-        {
-          reference_number: referenceNumber,
-          charter_type: validatedData.charterType,
-          first_name: validatedData.firstName,
-          last_name: validatedData.lastName,
-          email: validatedData.email,
-          phone: `${validatedData.countryCode}${validatedData.phone}`,
-          departure_location: validatedData.departure,
-          arrival_location: validatedData.arrival,
-          travel_date: validatedData.date,
-          team_size: (validatedData as any).teamSize || null,
-          production_company: (validatedData as any).productionCompany || null,
-          guest_count: (validatedData as any).guestCount || null,
-          passengers: (validatedData as any).passengers || null,
-          organization_name: (validatedData as any).organizationName || null,
-          cargo_type: (validatedData as any).cargoType || null,
-          temperature_range: (validatedData as any).temperature || null,
-          weight_kg: (validatedData as any).weight || null,
-          notes: (validatedData as any).notes || null,
-          company_name: (validatedData as any).company || null,
-          ip_address: ip === 'unknown' ? null : ip,
-          user_agent: request.headers.get('user-agent'),
-          status: 'new',
-        },
-      ]);
-
-    if (insertError) {
-      console.error('[v0] Database insert error:', insertError);
+    try {
+      const [result] = await pool.execute(
+        `INSERT INTO quote_submissions (
+          reference_number, charter_type, first_name, last_name, email, phone, 
+          departure_location, arrival_location, travel_date, team_size, 
+          production_company, guest_count, passengers, organization_name, 
+          cargo_type, temperature_range, weight_kg, notes, company_name, 
+          ip_address, user_agent, status
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+        [
+          referenceNumber,
+          validatedData.charterType,
+          validatedData.firstName,
+          validatedData.lastName,
+          validatedData.email,
+          `${validatedData.countryCode}${validatedData.phone}`,
+          validatedData.departure,
+          validatedData.arrival,
+          validatedData.date,
+          (validatedData as any).teamSize || null,
+          (validatedData as any).productionCompany || null,
+          (validatedData as any).guestCount || null,
+          (validatedData as any).passengers || null,
+          (validatedData as any).organizationName || null,
+          (validatedData as any).cargoType || null,
+          (validatedData as any).temperature || null,
+          (validatedData as any).weight || null,
+          (validatedData as any).notes || null,
+          (validatedData as any).company || null,
+          ip === 'unknown' ? null : ip,
+          request.headers.get('user-agent'),
+          'new'
+        ]
+      );
+    } catch (dbError) {
+      console.error('[v0] Database insert error:', dbError);
       return NextResponse.json(
         { error: 'Failed to store submission. Please try again.' },
         { status: 500 }
