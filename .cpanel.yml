@@ -3,5 +3,7 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/$USER/public_html
     - /bin/cp -R * $DEPLOYPATH
-    - cd $DEPLOYPATH && npm install --production
+    - /bin/cp -f .htaccess $DEPLOYPATH/ 2>/dev/null || true
+    - /bin/cp -f .env* $DEPLOYPATH/ 2>/dev/null || true
+    - cd $DEPLOYPATH && npm install
     - cd $DEPLOYPATH && npm run build
