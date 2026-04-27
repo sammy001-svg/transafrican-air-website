@@ -11,7 +11,7 @@ $resourcesLinks = [
     ["title" => "Careers", "href" => "/careers.php"],
     ["title" => "Privacy Policy", "href" => "/privacy-policy.php"],
     ["title" => "Terms & Conditions", "href" => "/terms-and-conditions.php"],
-    ["title" => "Company Profile", "href" => "https://blobs.vusercontent.net/blob/Transafrican%20Air%20Comapny%20Profile%202--2Y6REw8p0jGw9veQoePLqKAhRyU2N2.pdf"],
+    ["title" => "Company Profile", "href" => "/public/company-profile.pdf"],
 ];
 ?>
 

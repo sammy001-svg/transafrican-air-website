@@ -42,7 +42,7 @@ include 'includes/navbar.php';
           </p>
         </div>
         <div class="relative h-96 overflow-hidden rounded-lg shadow-lg group" id="about-image-container">
-          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-03-24%20at%203.20.14%20PM-Yfsc70TAMjZ2qdpFqiB0rlkDKePKnP.png" alt="About Transafrican Air" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+          <img src="/public/images/team-aircraft.jpg" alt="About Transafrican Air" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
         </div>
       </div>
     </div>
@@ -79,22 +79,22 @@ include 'includes/navbar.php';
 <script>
   const slides = [
     {
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/jet-airplane-landing-4YH0WHRTbFiDo38vlMQygpVGvoF9Ks.jpg",
+      image: "/public/private-jet-charter.jpg",
       title: "Government Projects",
       subtitle: "Reliable air cargo solutions for government operations",
     },
     {
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cargo-airplane-flying-above-the-clouds-at-sunrise-8Kj5rKMDt0C7Moal9SRt6sjat4HFar.jpg",
+      image: "/public/cargo-aircraft.jpg",
       title: "Charter Specialist & Air Cargo Operations",
       subtitle: "Professional passenger and air cargo solutions for all your needs",
     },
     {
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/business-jet-taxi-airplane-following-Picsart-AiImageEnhancer-gSh6AQF7zPSRyhk5DCpEjPJYhxLXpA.jpg",
+      image: "/public/private-business-jet.jpg",
       title: "Premium Jet Charter Services",
       subtitle: "Seamless global connectivity and luxury travel",
     },
     {
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/jet-airplane-landing-4YH0WHRTbFiDo38vlMQygpVGvoF9Ks.jpg",
+      image: "/public/passenger-commercial-aircraft.jpg",
       title: "Interline Partnerships",
       subtitle: "Trusted partner for aviation solutions worldwide",
     },
