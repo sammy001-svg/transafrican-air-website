@@ -21,11 +21,9 @@ export default function Header() {
 
   const resourcesLinks = [
     { title: "Aircraft Fleet", href: "/aircraft-guide" },
-    { title: "Articles", href: "/articles" },
     { title: "Careers", href: "/careers" },
     { title: "Privacy Policy", href: "/privacy-policy" },
     { title: "Terms & Conditions", href: "/terms-and-conditions" },
-    { title: "Company Profile", href: "https://blobs.vusercontent.net/blob/Transafrican%20Air%20Comapny%20Profile%202-2Y6REw8p0jGw9veQoePLqKAhRyU2N2.pdf" },
   ]
 
   const toggleDropdown = (dropdown: string) => {

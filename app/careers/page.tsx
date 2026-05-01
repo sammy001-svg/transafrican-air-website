@@ -3,43 +3,7 @@
 import { ArrowRight, Briefcase, Users, MapPin, DollarSign } from 'lucide-react'
 import Link from 'next/link'
 
-const jobOpenings = [
-  {
-    id: 1,
-    title: 'Flight Operations',
-    description: 'Lead our flight operations team with expertise in scheduling, compliance, and crew management across African routes.',
-    requirements: ['Commercial pilot license or operations experience', '5+ years in aviation', 'Knowledge of African airspace regulations'],
-    location: 'Nairobi, Kenya',
-  },
-  {
-    id: 2,
-    title: 'Engineering',
-    description: 'Maintain and optimize our diverse aircraft fleet with cutting-edge maintenance and engineering expertise.',
-    requirements: ['Aircraft maintenance certification', 'Troubleshooting expertise', 'Component overhaul experience'],
-    location: 'Nairobi, Kenya',
-  },
-  {
-    id: 3,
-    title: 'Cargo Logistics',
-    description: 'Manage cargo operations, logistics planning, and supply chain optimization for time-critical deliveries.',
-    requirements: ['Logistics management background', 'Customs and import/export knowledge', 'Warehouse management systems'],
-    location: 'Nairobi, Kenya',
-  },
-  {
-    id: 4,
-    title: 'Aviation Management',
-    description: 'Shape the future of Transafrican Air through strategic management, operations oversight, and business development.',
-    requirements: ['MBA or business degree', 'Aviation industry experience', 'P&L management expertise'],
-    location: 'Nairobi, Kenya',
-  },
-  {
-    id: 5,
-    title: 'Commercial Sales',
-    description: 'Drive revenue growth by building relationships with corporate clients, freight forwarders, and government agencies.',
-    requirements: ['B2B sales experience', 'Aviation or logistics background', 'Strong negotiation skills'],
-    location: 'Nairobi, Kenya',
-  },
-]
+
 
 export default function CareersPage() {
   return (
@@ -59,12 +23,9 @@ export default function CareersPage() {
               </p>
             </div>
 
-            <div className="relative h-full overflow-hidden">
-              <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/happy-business-people-and-applause-with-congratulations-for-winning-promotion-or-success-at-7FqlhEpHlGWhVsjEMTWPRy5FRTvgrx.jpg"
-                alt="Transafrican Air careers"
-                className="w-full h-full object-cover object-top"
-              />
+            {/* Right - Blank Space */}
+            <div className="relative h-full overflow-hidden bg-primary/10">
+              {/* Subtle gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-primary/30"></div>
             </div>
           </div>
@@ -107,47 +68,21 @@ export default function CareersPage() {
         </div>
       </section>
 
-      {/* Job Openings */}
+      {/* Job Openings - Blank Section */}
       <section className="py-12 md:py-16 bg-background">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold mb-12 text-balance text-foreground">Open Positions</h2>
-          <div className="space-y-6">
-            {jobOpenings.map((job) => (
-              <div key={job.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow p-6 md:p-8">
-                <div className="grid md:grid-cols-3 gap-6 mb-6">
-                  <div>
-                    <h3 className="text-2xl font-bold text-foreground mb-2">{job.title}</h3>
-                    <div className="flex items-center gap-2 text-foreground/80">
-                      <MapPin className="w-4 h-4" />
-                      <span className="text-sm">{job.location}</span>
-                    </div>
-                  </div>
-                  <div className="md:col-span-2">
-                    <p className="text-foreground/80 leading-relaxed mb-4">{job.description}</p>
-                  </div>
-                </div>
-
-                <div className="mb-6">
-                  <h4 className="font-bold text-foreground mb-3">Key Requirements:</h4>
-                  <ul className="space-y-2">
-                    {job.requirements.map((req, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-sm text-foreground/80">
-                        <span className="text-primary font-bold mt-0.5">•</span>
-                        {req}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <Link
-                  href="mailto:careers@transafricanair.com"
-                  className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-2 rounded font-semibold hover:opacity-90 transition"
-                >
-                  Apply Now
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
-            ))}
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-balance text-foreground">Open Positions</h2>
+          <div className="bg-muted p-8 rounded-lg max-w-2xl mx-auto border border-foreground/10">
+            <p className="text-lg text-foreground/80 mb-4">There are no open positions at this time.</p>
+            <p className="text-sm text-foreground/60 leading-relaxed mb-6">
+              We are always looking for exceptional talent to join our team. Feel free to submit your resume for future consideration.
+            </p>
+            <Link
+              href="mailto:careers@transafricanair.com"
+              className="inline-flex items-center gap-2 text-primary font-bold hover:underline"
+            >
+              Send Resume to Human Resources <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>

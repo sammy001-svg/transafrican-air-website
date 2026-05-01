@@ -16,11 +16,6 @@ const slides: Slide[] = [
     subtitle: "Reliable air cargo solutions for government operations",
   },
   {
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/cargo-airplane-flying-above-the-clouds-at-sunrise-8Kj5rKMDt0C7Moal9SRt6sjat4HFar.jpg",
-    title: "Charter Specialist & Air Cargo Operations",
-    subtitle: "Professional passenger and air cargo solutions for all your needs",
-  },
-  {
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/business-jet-taxi-airplane-following-Picsart-AiImageEnhancer-gSh6AQF7zPSRyhk5DCpEjPJYhxLXpA.jpg",
     title: "Premium Jet Charter Services",
     subtitle: "Seamless global connectivity and luxury travel",

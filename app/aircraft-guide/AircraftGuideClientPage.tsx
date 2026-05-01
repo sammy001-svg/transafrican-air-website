@@ -9,7 +9,7 @@ export default function AircraftGuideClientPage() {
       id: "cargo",
       title: "Cargo Aircraft",
       description: "Specialized aircraft for transporting goods, equipment, and freight across Africa and beyond.",
-      image: "/images/cargo-loading.jpg",
+      image: "",
       features: [
         "High payload capacity",
         "Wide cargo doors",
@@ -21,14 +21,14 @@ export default function AircraftGuideClientPage() {
       id: "private-jets",
       title: "Private Aircrafts",
       description: "Executive and luxury aircraft for business travel and private charters with premium comfort.",
-      image: "/images/private-aircraft-flight.jpg",
+      image: "",
       features: ["Luxury seating", "Direct point-to-point routes", "VIP privacy", "Flexible scheduling"],
     },
     {
       id: "passenger",
       title: "Group Aircraft", // renamed from "Passenger Aircraft" to "Group Aircraft"
       description: "Modern commercial airliners for group charters and scheduled passenger services.",
-      image: "/images/regional-bush-aircraft.jpg",
+      image: "",
       features: [
         "50+ passenger capacity",
         "Full service amenities",
@@ -57,13 +57,8 @@ export default function AircraftGuideClientPage() {
                 key={aircraft.id}
                 className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden flex flex-col"
               >
-                {/* Image */}
-                <div className="h-32 overflow-hidden bg-gray-100">
-                  <img
-                    src={aircraft.image || "/placeholder.svg"}
-                    alt={aircraft.title}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
+                {/* Image Placeholder */}
+                <div className="h-32 bg-primary/5 flex items-center justify-center">
                 </div>
 
                 {/* Content */}
@@ -94,9 +89,9 @@ export default function AircraftGuideClientPage() {
                     <Link
                       href={
                         aircraft.id === "cargo"
-                          ? "/cargo-guide"
+                          ? "/cargo-charters"
                           : aircraft.id === "passenger"
-                            ? "/passenger-guide"
+                            ? "/group-charter"
                             : `/${aircraft.id}-guide`
                       }
                       className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all group text-sm"

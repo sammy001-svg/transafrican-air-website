@@ -56,14 +56,9 @@ export default function PrivateJetCharterPage() {
               </MaskedTextReveal>
             </div>
 
-            {/* Right - Image */}
-            <div className="relative h-full overflow-hidden">
-              <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/360_F_109998949_xv1B0NNCsrmDzzXFOLmwTnsQTcPYfXiT-I9TYBlzOsbcq83fjNtZPqGMinBdaoz.jpg"
-                alt="Private Charter Solutions - Luxury private jet"
-                className="w-full h-full object-cover object-center"
-              />
-              {/* Subtle gradient overlay for text readability */}
+            {/* Right - Blank Space */}
+            <div className="relative h-full overflow-hidden bg-primary/10">
+              {/* Subtle gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-primary/20"></div>
             </div>
           </div>
@@ -82,13 +77,7 @@ export default function PrivateJetCharterPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* Private Jet Charter Card */}
               <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
-                <div className="h-40 overflow-hidden">
-                  <img
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/business-jet-interior-QTMUhn5LJqJXfiZThqhqQjdT4TG8kD.jpg"
-                    alt="Private Jet Charter - Luxury cabin interior"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
+                <div className="h-40 bg-primary/5"></div>
                 <div className="p-4 flex flex-col flex-grow">
                   <h3 className="text-lg font-bold text-foreground mb-2">Private Jet Luxury</h3>
                   <p className="text-sm text-foreground/80 leading-relaxed mb-4 flex-grow">
@@ -102,13 +91,7 @@ export default function PrivateJetCharterPage() {
 
               {/* Official Visits Card */}
               <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
-                <div className="h-40 overflow-hidden">
-                  <img
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mature-businessman-exiting-private-jet-after-flight-vSnTQSPiXdAhZGNpP1grNX6viYyR50.jpg"
-                    alt="Official Visits - Government delegation"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
+                <div className="h-40 bg-primary/5"></div>
                 <div className="p-4 flex flex-col flex-grow">
                   <h3 className="text-lg font-bold text-foreground mb-2">Official Visits</h3>
                   <p className="text-sm text-foreground/80 leading-relaxed mb-4 flex-grow">
@@ -122,13 +105,7 @@ export default function PrivateJetCharterPage() {
 
               {/* Wildlife Trips Card */}
               <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
-                <div className="h-40 overflow-hidden">
-                  <img
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/360_F_338362057_F2XFMYtUt7WGrFXuh02UZWKJjanwv1E0-LqbVzAI6iKklgWdFEtG7aweam0mvkF.jpg"
-                    alt="Wildlife Trips - Safari adventure"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
+                <div className="h-40 bg-primary/5"></div>
                 <div className="p-4 flex flex-col flex-grow">
                   <h3 className="text-lg font-bold text-foreground mb-2">Wildlife Trips</h3>
                   <p className="text-sm text-foreground/80 leading-relaxed mb-4 flex-grow">
@@ -142,13 +119,7 @@ export default function PrivateJetCharterPage() {
 
               {/* Helicopters Card */}
               <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
-                <div className="h-40 overflow-hidden">
-                  <img
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/360_F_192511670_Z9oScfHE2TRmiNaRVFBoTrYBwmoun6hC-pUSSkaR2hRSj0kykRzUUU9Jh4vRWrf.jpg"
-                    alt="Helicopters - Fast response"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
+                <div className="h-40 bg-primary/5"></div>
                 <div className="p-4 flex flex-col flex-grow">
                   <h3 className="text-lg font-bold text-foreground mb-2">Helicopters</h3>
                   <p className="text-sm text-foreground/80 leading-relaxed mb-4 flex-grow">

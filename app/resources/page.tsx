@@ -14,14 +14,6 @@ export default function ResourcesPage() {
       href: "/aircraft-guide",
     },
     {
-      id: 2,
-      title: "Articles",
-      icon: BookOpen,
-      description:
-        "Read insightful articles about aviation, charter services, industry trends, and travel tips. Stay informed with our latest publications.",
-      href: "/articles",
-    },
-    {
       id: 3,
       title: "Careers",
       icon: Briefcase,
@@ -45,15 +37,6 @@ export default function ResourcesPage() {
         "Review our terms and conditions for charter services. Understand the policies and agreements that govern your interactions with Transafrican Air.",
       href: "/terms-and-conditions",
     },
-    {
-      id: 6,
-      title: "Company Profile",
-      icon: Download,
-      description:
-        "Download our comprehensive company profile document to learn about Transafrican Air's history, services, competencies, and operational capabilities.",
-      href: "/company-profile.pdf",
-      isExternal: true,
-    },
   ]
 
   return (
@@ -72,7 +55,7 @@ export default function ResourcesPage() {
                 Resources
               </h1>
               <p className="text-sm md:text-base text-primary-foreground/95 max-w-xl leading-relaxed">
-                Everything you need to know about Transafrican Air. Access our fleet information, read informative articles, explore career opportunities, and review our policies.
+                Everything you need to know about Transafrican Air. Access our fleet information, explore career opportunities, and review our policies.
               </p>
             </div>
 

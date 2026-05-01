@@ -59,10 +59,6 @@ export default function Footer() {
                 <br />
                 Airport Trade Center Building,
                 <br />
-                2nd Floor-Wing A
-                <br />
-                P.O Box 19131-00501,
-                <br />
                 Nairobi, Kenya
               </p>
               <Link href="/contact-us" className="text-sm text-primary hover:underline mb-6 block">
@@ -214,14 +210,6 @@ export default function Footer() {
               </a>
             </p>
 
-            <h4 className="text-sm font-bold mb-3 text-slate-300">COMPANY</h4>
-            <ul className="space-y-2 mb-4">
-              <li>
-                <a href="https://blobs.vusercontent.net/blob/Transafrican%20Air%20Comapny%20Profile%202-2Y6REw8p0jGw9veQoePLqKAhRyU2N2.pdf" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-400 hover:text-primary transition">
-                  Company Profile
-                </a>
-              </li>
-            </ul>
 
             <h4 className="text-sm font-bold mb-3 text-slate-300">LEGAL</h4>
             <ul className="space-y-2">
@@ -281,17 +269,6 @@ export default function Footer() {
         <div className="container mx-auto px-4 text-center space-y-2">
           <p className="text-sm text-slate-500">
             All rights reserved. Transafrican Air Limited Copyright © {currentYear}
-          </p>
-          <p className="text-sm text-slate-500">
-            Website Developed by{" "}
-            <a
-              href="https://uzimaviewdesigns.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary hover:underline"
-            >
-              Uzima View Designs
-            </a>
           </p>
         </div>
       </div>

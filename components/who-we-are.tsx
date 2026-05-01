@@ -31,7 +31,7 @@ export default function WhoWeAreSection() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-7 gap-8 items-start">
-            <div className="lg:col-span-4">
+            <div className="lg:col-span-7">
               <div>
                 <MaskedTextReveal as="h2" className="text-3xl font-bold mb-6 text-foreground">
                   Company Overview
@@ -47,16 +47,6 @@ Operating from strategic African hubs, Transafrican Air combines aviation expert
                     requirements.
                   </MaskedTextReveal>
                 </div>
-              </div>
-            </div>
-
-            <div className="lg:col-span-3">
-              <div className="overflow-hidden rounded-lg shadow-lg">
-                <img
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/okc0b5po2dkemzatufpv-Ma3VLwM9tD5fQiUb8rGgdNdszJPIEB.jpeg"
-                  alt="Who We Are - Transafrican Air Team"
-                  className="w-full h-auto"
-                />
               </div>
             </div>
           </div>

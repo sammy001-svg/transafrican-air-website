@@ -26,7 +26,6 @@ const services = [
     id: 3,
     title: "Cargo Charters",
     icon: Plane,
-    image: "/images/cargo-operations.jpg",
     description:
       "Fast and reliable cargo charter solutions for urgent shipments, dangerous goods, heavy cargo, and humanitarian aid operations.",
     link: "/cargo-charters",
@@ -68,13 +67,15 @@ export default function WhatWeDoSection() {
                 <Link href={service.link} key={service.id}>
                   <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow h-full cursor-pointer group">
                     {/* Image */}
-                    <div className="h-48 overflow-hidden">
-                      <img
-                        src={service.image || "/placeholder.svg"}
-                        alt={service.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
-                    </div>
+                    {service.image && (
+                      <div className="h-48 overflow-hidden">
+                        <img
+                          src={service.image}
+                          alt={service.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
+                    )}
 
                     {/* Content */}
                     <div className="p-6">

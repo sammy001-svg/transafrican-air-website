@@ -8,24 +8,14 @@ export default function HelicoptersPage() {
       {/* Page Header with Image */}
       <section className="bg-background py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-4 text-balance text-foreground">Helicopter Services</h1>
-              <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mb-6">
-                Fast, flexible helicopter charter services for urgent medical evacuations, executive transport, and specialized operations across Africa and beyond.
-              </p>
-              <p className="text-foreground/70 mb-8">
-                Our helicopter fleet provides quick response times, remote location access, and direct point-to-point travel when you need it most.
-              </p>
-            </div>
-            <div className="relative h-80 md:h-96 lg:h-full lg:min-h-96 rounded-lg overflow-hidden shadow-lg">
-              <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/360_F_445406531_iny9BntJtXX5esYM51sfayS2l4vrNsZp-CdMQWqgKiWX7Dhv26a9gZ4l2ukHyB2.jpg"
-                alt="Modern blue helicopter in flight"
-                className="w-full h-full object-cover object-center"
-              />
-              <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-primary/30"></div>
-            </div>
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-balance text-foreground">Helicopter Services</h1>
+            <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mb-6">
+              Fast, flexible helicopter charter services for urgent medical evacuations, executive transport, and specialized operations across Africa and beyond.
+            </p>
+            <p className="text-foreground/70 mb-8">
+              Our helicopter fleet provides quick response times, remote location access, and direct point-to-point travel when you need it most.
+            </p>
           </div>
         </div>
       </section>

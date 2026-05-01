@@ -16,7 +16,7 @@ export default function GroupCharterPage() {
       icon: Users,
       description:
         "We offer a complete range of short and long-term Aircraft, Crew, Maintenance and Insurance leasing solutions.",
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/360_F_212955118_XPUOmE98LtmIih74iQskIqYPc7j45EoS%20-%20Copy-bxcCpnQIaUETuRkZwSgHu47R0UXIZO.jpg",
+      image: "",
       href: "/acmi-leasing",
     },
     {
@@ -25,7 +25,7 @@ export default function GroupCharterPage() {
       icon: HeartHandshake,
       description:
         "Organize a charter to your next corporate event, saving you the time, money and inconvenience of a commercial flight.",
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/music%20event-nuTxIP8fzAWYjtDrkfulJfwUKdcokz.jpg",
+      image: "",
       href: "/events-charter-concepts",
     },
     {
@@ -34,7 +34,7 @@ export default function GroupCharterPage() {
       icon: Users,
       description:
         "Providing every team member with comfort, safety, and on-time service to ensure they are prepared to play and win.",
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/charter%20group%20plane-ESOE4Avo3Lg7CNUb7bIIY2z8JdFvHd.jpg",
+      image: "",
       href: "/sports-team-charter",
     },
   ]
@@ -65,14 +65,9 @@ export default function GroupCharterPage() {
               </MaskedTextReveal>
             </div>
 
-            {/* Right - Image */}
-            <div className="relative h-full overflow-hidden">
-              <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/360_F_1113073913_nO3He28x9tq8sopoFLo3xNZBvQ8tEN2M-89VXCs9ManLb93a4mnPeleQvBBfIQn.jpg"
-                alt="Group Charter Solutions"
-                className="w-full h-full object-cover object-center"
-              />
-              {/* Subtle gradient overlay for text readability */}
+            {/* Right - Blank Space */}
+            <div className="relative h-full overflow-hidden bg-primary/10">
+              {/* Subtle gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-primary/20"></div>
             </div>
           </div>
@@ -91,12 +86,8 @@ export default function GroupCharterPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {charterServices.map((service) => (
                 <div key={service.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
-                  <div className="h-40 overflow-hidden">
-                    <img
-                      src={service.image || "/placeholder.svg"}
-                      alt={service.title}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    />
+                  <div className="h-40 bg-primary/5 flex items-center justify-center">
+                    <service.icon className="w-12 h-12 text-primary/20" />
                   </div>
                   <div className="p-4 flex flex-col flex-grow">
                     <h3 className="text-lg font-bold text-foreground mb-2">{service.title}</h3>
@@ -123,13 +114,7 @@ export default function GroupCharterPage() {
             </MaskedTextReveal>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="h-40 overflow-hidden">
-                  <img
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/360_F_290144076_F4rmAptBnAOCI04lZLEDgJL5MpkJsXex-Znj1Xd1KTLwy2XOB2gDmE4naoxddb8.jpg"
-                    alt="In-Flight Catering"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
+                <div className="h-40 bg-primary/5"></div>
                 <div className="p-4">
                   <h3 className="text-lg font-bold text-primary mb-2">In-Flight Catering</h3>
                   <p className="text-sm text-foreground/80 leading-relaxed">
@@ -139,13 +124,7 @@ export default function GroupCharterPage() {
               </div>
 
               <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="h-40 overflow-hidden">
-                  <img
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/360_F_73639306_1hsqERddutYEORXfM6NDdAFg1ilK0sVs-QzYXc2T65Tq7ZDbDR8hVCDC7oKFfmt.jpg"
-                    alt="Limousine & Transfers"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
+                <div className="h-40 bg-primary/5"></div>
                 <div className="p-4">
                   <h3 className="text-lg font-bold text-primary mb-2">Limousine & Transfers</h3>
                   <p className="text-sm text-foreground/80 leading-relaxed">
@@ -155,13 +134,7 @@ export default function GroupCharterPage() {
               </div>
 
               <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="h-40 overflow-hidden">
-                  <img
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/360_F_1659652998_o9gTl1BHbpWnK4TQ2TDDyt4sXYXn8Y1i-nypldZhfg1IATg9OMJCWCUPkqGb9FR.jpg"
-                    alt="Aircraft Personalization"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
+                <div className="h-40 bg-primary/5"></div>
                 <div className="p-4">
                   <h3 className="text-lg font-bold text-primary mb-2">Aircraft Personalization</h3>
                   <p className="text-sm text-foreground/80 leading-relaxed">
@@ -171,13 +144,7 @@ export default function GroupCharterPage() {
               </div>
 
               <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="h-40 overflow-hidden">
-                  <img
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/360_F_334046699_9cbGAs6xo3ybr2pVjZWFo7LaNkpdk3jj-5fP7AXkfN5BcHAYxDDSKZZ1PTB8MXh.jpg"
-                    alt="VIP Lounge Access"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
+                <div className="h-40 bg-primary/5"></div>
                 <div className="p-4">
                   <h3 className="text-lg font-bold text-primary mb-2">VIP Lounge Access</h3>
                   <p className="text-sm text-foreground/80 leading-relaxed">

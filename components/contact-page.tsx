@@ -257,8 +257,6 @@ export default function ContactPage() {
                   <div>
                     <p className="text-foreground font-semibold">Jomo Kenyatta International Airport</p>
                     <p className="text-foreground">Airport Trade Center Building</p>
-                    <p className="text-foreground">2nd Floor - Wing A</p>
-                    <p className="text-foreground">P.O Box 19131-00501</p>
                     <p className="text-foreground">Nairobi, Kenya</p>
                   </div>
                 </div>

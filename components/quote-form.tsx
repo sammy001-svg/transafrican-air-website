@@ -33,7 +33,6 @@ export const airports = [
 export const countryCodes = [
   { code: '+1', country: 'United States' },
   { code: '+1', country: 'Canada' },
-  { code: '+1', country: 'Mexico' },
   { code: '+7', country: 'Russia' },
   { code: '+20', country: 'Egypt' },
   { code: '+27', country: 'South Africa' },
@@ -1225,7 +1224,7 @@ export function QuoteForm({
                     className="w-full px-3 py-3 border-2 border-foreground/20 rounded-lg focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition text-sm"
                   >
                     {countryCodes.map((item) => (
-                      <option key={item.code} value={item.code}>
+                      <option key={`${item.code}-${item.country}`} value={item.code}>
                         {item.code} {item.country}
                       </option>
                     ))}
