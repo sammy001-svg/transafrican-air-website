@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import type { Viewport } from "next"
 import "./globals.css"
 import { ScrollToTop } from "@/components/scroll-to-top"
 import Header from "@/components/header"
@@ -71,12 +72,13 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-icon.png",
   },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 5,
-    userScalable: true,
-  },
+}
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
 }
 
 export default function RootLayout({
@@ -85,12 +87,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="sitemap" href={`${siteConfig.url}/sitemap.xml`} />
-        <meta name="theme-color" content="#0066cc" />
       </head>
-      <body className={`font-sans antialiased`}>
+      <body className={`font-sans antialiased`} suppressHydrationWarning>
         <Header />
         <ScrollToTop />
         {children}
