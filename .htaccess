@@ -1,15 +1,24 @@
-# Next.js to PHP Migration
-# Disable Node.js Passenger
-# PassengerEnabled off
+# PHP Configuration
+DirectoryIndex index.php index.html
 
+# Enable Rewrite Engine
 RewriteEngine On
 RewriteBase /
 
-# 1. Clean URLs (e.g., /about -> /about.php)
+# Force trailing slash for directories
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.*[^/])$ /$1/ [L,R=301]
+
+# Clean URLs: map /page to /page.php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^([^/]+)/?$ $1.php [L]
 
-# 2. Redirect root index to index.php
-DirectoryIndex index.php index.html
+# Prevent directory listing
+Options -Indexes
+
+# If on cPanel/LiteSpeed, disable Passenger to ensure PHP handles the request
+<IfModule mod_passenger.c>
+    PassengerEnabled off
+</IfModule>

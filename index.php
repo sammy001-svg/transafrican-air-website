@@ -48,8 +48,8 @@ include 'includes/navbar.php';
           </div>
         </div>
         <div class="relative h-96 overflow-hidden rounded-3xl shadow-2xl group" id="about-image-container">
-          <img src="/public/images/team-aircraft.jpg" alt="About Transafrican Air" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-          <div class="absolute inset-0 bg-linear-to-t from-black/60 to-transparent flex items-end p-8">
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-03-24%20at%203.20.14%20PM-Yfsc70TAMjZ2qdpFqiB0rlkDKePKnP.png" alt="About Transafrican Air" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
               <p class="text-white font-bold italic">Dedicated Professionals, Mission-Ready</p>
           </div>
         </div>
@@ -61,7 +61,7 @@ include 'includes/navbar.php';
   <section class="py-16 md:py-24 bg-slate-900 text-white">
       <div class="container mx-auto px-4">
           <div class="text-center mb-16">
-              <h2 class="text-4xl font-bold mb-4">Our Core Capabilities</h2>
+              <h2 class="text-4xl font-bold mb-4 uppercase tracking-tight">Our Core Capabilities</h2>
               <p class="text-slate-400 max-w-2xl mx-auto">Providing world-class aircraft charter and logistics solutions tailored to your unique requirements.</p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -96,54 +96,39 @@ include 'includes/navbar.php';
       </div>
   </section>
 
-  <!-- Global Footprint -->
-  <section class="py-16 md:py-24 overflow-hidden">
+  <!-- Why Choose Us -->
+  <section class="py-16 md:py-24 bg-background">
       <div class="container mx-auto px-4">
-          <div class="flex flex-col lg:flex-row items-center gap-16">
-              <div class="lg:w-1/2 space-y-6">
-                  <h2 class="text-3xl md:text-5xl font-bold">Strategic Operational Hub</h2>
-                  <p class="text-lg text-slate-600 leading-relaxed text-pretty">
-                      Headquartered at **Jomo Kenyatta International Airport (JKIA)** in Nairobi, Kenya, we occupy the most strategic aviation gateway in Africa. Our location allows for immediate response across East, Central, and Western Africa.
-                  </p>
-                  <div class="grid grid-cols-2 gap-8 pt-6">
-                      <div>
-                          <h4 class="text-4xl font-bold text-primary mb-1">24/7</h4>
-                          <p class="text-sm font-bold text-slate-500 uppercase tracking-widest">Global Support</p>
-                      </div>
-                      <div>
-                          <h4 class="text-4xl font-bold text-primary mb-1">50+</h4>
-                          <p class="text-sm font-bold text-slate-500 uppercase tracking-widest">African Destinations</p>
-                      </div>
-                  </div>
+          <div class="text-center mb-16">
+              <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4 uppercase tracking-tight">Why Choose Transafrican Air</h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-0">
+              <div class="px-8 py-8 text-center md:border-r border-slate-300">
+                  <div class="mb-6 flex justify-center"><i data-lucide="award" class="w-12 h-12 text-primary"></i></div>
+                  <div class="text-4xl font-bold text-primary mb-3">15+</div>
+                  <h3 class="text-xl font-bold mb-4">Years of Excellence</h3>
+                  <p class="text-sm text-foreground/70">Proven track record serving government and humanitarian missions.</p>
               </div>
-              <div class="lg:w-1/2 relative">
-                  <div class="bg-primary/5 rounded-3xl p-8 border border-primary/10">
-                      <img src="/public/images/transafrican-cargo-aircraft.jpg" class="rounded-2xl shadow-xl transform hover:rotate-2 transition" alt="Transafrican Aircraft">
-                  </div>
-                  <!-- Floating Badge -->
-                  <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-2xl flex items-center gap-4 border border-slate-100">
-                      <div class="bg-green-500 w-3 h-3 rounded-full animate-pulse"></div>
-                      <div>
-                          <p class="text-xs font-bold text-slate-400">Live Status</p>
-                          <p class="font-bold">Mission Ready</p>
-                      </div>
-                  </div>
+              <div class="px-8 py-8 text-center md:border-r border-slate-300">
+                  <div class="mb-6 flex justify-center"><i data-lucide="globe" class="w-12 h-12 text-primary"></i></div>
+                  <div class="text-4xl font-bold text-primary mb-3">40+</div>
+                  <h3 class="text-xl font-bold mb-4">Global Coverage</h3>
+                  <p class="text-sm text-foreground/70">Pan-African presence with reliable operations across the continent.</p>
+              </div>
+              <div class="px-8 py-8 text-center md:border-r border-slate-300">
+                  <div class="mb-6 flex justify-center"><i data-lucide="plane" class="w-12 h-12 text-primary"></i></div>
+                  <div class="text-4xl font-bold text-primary mb-3">25+</div>
+                  <h3 class="text-xl font-bold mb-4">Diverse Fleet</h3>
+                  <p class="text-sm text-foreground/70">Access to a wide range of aircraft for every operational need.</p>
+              </div>
+              <div class="px-8 py-8 text-center">
+                  <div class="mb-6 flex justify-center"><i data-lucide="phone" class="w-12 h-12 text-primary"></i></div>
+                  <div class="text-4xl font-bold text-primary mb-3">24/7</div>
+                  <h3 class="text-xl font-bold mb-4">Personal Service</h3>
+                  <p class="text-sm text-foreground/70">Dedicated teams available anytime to support your mission.</p>
               </div>
           </div>
       </div>
-  </section>
-
-  <!-- Key Clients & Sectors -->
-  <section class="py-16 bg-slate-50">
-    <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-12">Who We Serve</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 grayscale hover:grayscale-0 transition-all duration-500 opacity-60">
-            <div class="flex items-center justify-center p-4"><p class="font-bold text-xl">United Nations</p></div>
-            <div class="flex items-center justify-center p-4"><p class="font-bold text-xl">NGOs & Agencies</p></div>
-            <div class="flex items-center justify-center p-4"><p class="font-bold text-xl">Governments</p></div>
-            <div class="flex items-center justify-center p-4"><p class="font-bold text-xl">Commercial Partners</p></div>
-        </div>
-    </div>
   </section>
 
   <!-- CTA Banner -->
@@ -169,22 +154,17 @@ include 'includes/navbar.php';
 <script>
   const slides = [
     {
-      image: "/public/private-jet-charter.jpg",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/jet-airplane-landing-4YH0WHRTbFiDo38vlMQygpVGvoF9Ks.jpg",
       title: "Government Projects",
       subtitle: "Reliable air cargo solutions for government operations",
     },
     {
-      image: "/public/cargo-aircraft.jpg",
-      title: "Charter Specialist & Air Cargo Operations",
-      subtitle: "Professional passenger and air cargo solutions for all your needs",
-    },
-    {
-      image: "/public/private-business-jet.jpg",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/business-jet-taxi-airplane-following-Picsart-AiImageEnhancer-gSh6AQF7zPSRyhk5DCpEjPJYhxLXpA.jpg",
       title: "Premium Jet Charter Services",
       subtitle: "Seamless global connectivity and luxury travel",
     },
     {
-      image: "/public/passenger-commercial-aircraft.jpg",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/jet-airplane-landing-4YH0WHRTbFiDo38vlMQygpVGvoF9Ks.jpg",
       title: "Interline Partnerships",
       subtitle: "Trusted partner for aviation solutions worldwide",
     },
@@ -229,10 +209,12 @@ include 'includes/navbar.php';
     slides.forEach((_, i) => {
       document.getElementById(`slide-${i}`).style.opacity = i === currentSlide ? '1' : '0';
       const dot = document.getElementById(`dot-${i}`);
-      dot.classList.toggle('bg-white', i === currentSlide);
-      dot.classList.toggle('w-8', i === currentSlide);
-      dot.classList.toggle('bg-white/50', i !== currentSlide);
-      dot.classList.toggle('w-2', i !== currentSlide);
+      if (dot) {
+        dot.classList.toggle('bg-white', i === currentSlide);
+        dot.classList.toggle('w-8', i === currentSlide);
+        dot.classList.toggle('bg-white/50', i !== currentSlide);
+        dot.classList.toggle('w-2', i !== currentSlide);
+      }
     });
   }
 
@@ -252,8 +234,6 @@ include 'includes/navbar.php';
   }
 
   // Animation on scroll
-  gsap.registerPlugin(ScrollTrigger);
-
   gsap.from("#about-content", {
       scrollTrigger: {
           trigger: "#about",
