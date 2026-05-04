@@ -21,18 +21,13 @@ include 'includes/navbar.php';
   <!-- Company Overview -->
   <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
-      <div class="grid lg:grid-cols-7 gap-12 items-start">
-        <div class="lg:col-span-4 space-y-6">
-          <h2 class="text-3xl font-bold text-foreground">Company Overview</h2>
-          <div class="space-y-4 text-gray-700 leading-relaxed text-lg">
-            <p>Transafrican Air is an aviation enterprise focused on developing sustainable air connectivity within Africa and between Africa and global markets.</p>
-            <p>The company is designed to bridge logistics gaps, support trade flows, and provide efficient aviation services to governments, businesses, and humanitarian organizations.</p>
-            <p>Operating from strategic African hubs, Transafrican Air combines aviation expertise with logistics innovation to deliver dependable solutions in challenging environments.</p>
-            <p>Our core business is export oriented. We outsource to export and service the local clients' import requirements.</p>
-          </div>
-        </div>
-        <div class="lg:col-span-3 rounded-lg overflow-hidden shadow-xl">
-          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/okc0b5po2dkemzatufpv-Ma3VLwM9tD5fQiUb8rGgdNdszJPIEB.jpeg" alt="Who We Are - Transafrican Air Team" class="w-full h-auto">
+      <div class="max-w-4xl mx-auto space-y-6">
+        <h2 class="text-3xl font-bold text-foreground">Company Overview</h2>
+        <div class="space-y-4 text-gray-700 leading-relaxed text-lg">
+          <p>Transafrican Air is an aviation enterprise focused on developing sustainable air connectivity within Africa and between Africa and global markets.</p>
+          <p>The company is designed to bridge logistics gaps, support trade flows, and provide efficient aviation services to governments, businesses, and humanitarian organizations.</p>
+          <p>Operating from strategic African hubs, Transafrican Air combines aviation expertise with logistics innovation to deliver dependable solutions in challenging environments.</p>
+          <p>Our core business is export oriented. We outsource to export and service the local clients' import requirements.</p>
         </div>
       </div>
     </div>

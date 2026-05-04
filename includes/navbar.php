@@ -7,7 +7,6 @@ $servicesLinks = [
 
 $resourcesLinks = [
     ["title" => "Aircraft Fleet", "href" => "/aircraft-guide.php"],
-    ["title" => "Articles", "href" => "/articles.php"],
     ["title" => "Careers", "href" => "/careers.php"],
     ["title" => "Privacy Policy", "href" => "/privacy-policy.php"],
     ["title" => "Terms & Conditions", "href" => "/terms-and-conditions.php"],

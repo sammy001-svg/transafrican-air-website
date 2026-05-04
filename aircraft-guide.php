@@ -8,21 +8,18 @@ $aircraftCategories = [
         "id" => "cargo",
         "title" => "Cargo Aircraft",
         "description" => "Specialized aircraft for transporting goods, equipment, and freight across Africa and beyond.",
-        "image" => "/public/images/cargo-loading.jpg",
         "features" => ["High payload capacity", "Wide cargo doors", "Temperature controlled", "Quick turnaround"]
     ],
     [
         "id" => "private-jets",
         "title" => "Private Aircrafts",
         "description" => "Executive and luxury aircraft for business travel and private charters with premium comfort.",
-        "image" => "/public/images/private-aircraft-flight.jpg",
         "features" => ["Luxury seating", "Point-to-point routes", "VIP privacy", "Flexible scheduling"]
     ],
     [
         "id" => "passenger",
         "title" => "Group Aircraft",
         "description" => "Modern commercial airliners for group charters and scheduled passenger services.",
-        "image" => "/public/images/regional-bush-aircraft.jpg",
         "features" => ["50+ passenger capacity", "Full service amenities", "Multi-class configuration", "Advanced safety"]
     ]
 ];
@@ -40,10 +37,7 @@ $aircraftCategories = [
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <?php foreach ($aircraftCategories as $aircraft): ?>
-                    <div class="bg-white rounded-2xl shadow-lg border overflow-hidden hover:shadow-xl transition flex flex-col">
-                        <div class="h-48 overflow-hidden">
-                            <img src="<?php echo $aircraft['image']; ?>" class="w-full h-full object-cover">
-                        </div>
+                    <div class="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden hover:shadow-xl transition flex flex-col">
                         <div class="p-8 flex flex-col grow">
                             <h3 class="text-xl font-bold mb-4"><?php echo $aircraft['title']; ?></h3>
                             <p class="text-slate-500 mb-6 grow"><?php echo $aircraft['description']; ?></p>

@@ -9,14 +9,9 @@ include 'includes/navbar.php';
   <!-- Header -->
   <section class="relative overflow-hidden py-8 md:py-12 h-72 md:h-96 bg-primary">
     <div class="container mx-auto px-4 h-full relative z-10">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-0 items-center h-full">
-        <div class="text-white space-y-4">
-          <h1 class="text-3xl md:text-5xl font-bold">Private Charter Solutions</h1>
-          <p class="text-sm md:text-base opacity-90 max-w-xl">No matter the mission, from executive travel to urgent operations or premium getaways, we provide private charter options tailored to your needs.</p>
-        </div>
-        <div class="hidden md:block relative h-full">
-          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/360_F_109998949_xv1B0NNCsrmDzzXFOLmwTnsQTcPYfXiT-I9TYBlzOsbcq83fjNtZPqGMinBdaoz.jpg" alt="Private Jet" class="w-full h-full object-cover rounded-lg shadow-2xl">
-        </div>
+      <div class="max-w-3xl text-white space-y-4">
+        <h1 class="text-3xl md:text-5xl font-bold">Private Charter Solutions</h1>
+        <p class="text-sm md:text-base opacity-90 max-w-xl">No matter the mission, from executive travel to urgent operations or premium getaways, we provide private charter options tailored to your needs.</p>
       </div>
     </div>
   </section>
@@ -27,10 +22,7 @@ include 'includes/navbar.php';
       <h2 class="text-2xl md:text-3xl font-bold mb-12 text-primary">Explore Private Charter</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <!-- Private Jet -->
-        <div class="group bg-white rounded-xl shadow-sm border overflow-hidden hover:shadow-xl transition">
-          <div class="h-40 overflow-hidden">
-            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/business-jet-interior-QTMUhn5LJqJXfiZThqhqQjdT4TG8kD.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-          </div>
+        <div class="group bg-white rounded-xl shadow-sm border overflow-hidden hover:shadow-xl transition border-slate-200">
           <div class="p-6">
             <h3 class="font-bold text-lg mb-2">Private Jet Luxury</h3>
             <p class="text-slate-500 text-sm mb-4">Experience flexibility with exclusive private jet charters.</p>
@@ -38,10 +30,7 @@ include 'includes/navbar.php';
           </div>
         </div>
         <!-- Official Visits -->
-        <div class="group bg-white rounded-xl shadow-sm border overflow-hidden hover:shadow-xl transition">
-          <div class="h-40 overflow-hidden">
-            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mature-businessman-exiting-private-jet-after-flight-vSnTQSPiXdAhZGNpP1grNX6viYyR50.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-          </div>
+        <div class="group bg-white rounded-xl shadow-sm border overflow-hidden hover:shadow-xl transition border-slate-200">
           <div class="p-6">
             <h3 class="font-bold text-lg mb-2">Official Visits</h3>
             <p class="text-slate-500 text-sm mb-4">Tailor-made flights for esteemed Officials and Dignitaries.</p>
@@ -49,10 +38,7 @@ include 'includes/navbar.php';
           </div>
         </div>
         <!-- Wildlife -->
-        <div class="group bg-white rounded-xl shadow-sm border overflow-hidden hover:shadow-xl transition">
-          <div class="h-40 overflow-hidden">
-            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/360_F_338362057_F2XFMYtUt7WGrFXuh02UZWKJjanwv1E0-LqbVzAI6iKklgWdFEtG7aweam0mvkF.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-          </div>
+        <div class="group bg-white rounded-xl shadow-sm border overflow-hidden hover:shadow-xl transition border-slate-200">
           <div class="p-6">
             <h3 class="font-bold text-lg mb-2">Wildlife Trips</h3>
             <p class="text-slate-500 text-sm mb-4">Access exclusive reserves and parks with a private jet.</p>
@@ -60,10 +46,7 @@ include 'includes/navbar.php';
           </div>
         </div>
         <!-- Helicopters -->
-        <div class="group bg-white rounded-xl shadow-sm border overflow-hidden hover:shadow-xl transition">
-          <div class="h-40 overflow-hidden">
-            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/360_F_192511670_Z9oScfHE2TRmiNaRVFBoTrYBwmoun6hC-pUSSkaR2hRSj0kykRzUUU9Jh4vRWrf.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-          </div>
+        <div class="group bg-white rounded-xl shadow-sm border overflow-hidden hover:shadow-xl transition border-slate-200">
           <div class="p-6">
             <h3 class="font-bold text-lg mb-2">Helicopters</h3>
             <p class="text-slate-500 text-sm mb-4">Medical evacuations and specialized rapid response.</p>

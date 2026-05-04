@@ -8,14 +8,9 @@ include 'includes/navbar.php';
   <!-- Header -->
   <section class="relative overflow-hidden py-8 md:py-12 h-72 md:h-96 bg-primary">
     <div class="container mx-auto px-4 h-full relative z-10">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-0 items-center h-full">
-        <div class="text-white space-y-4">
-          <h1 class="text-3xl md:text-5xl font-bold">Group Charter Solutions</h1>
-          <p class="text-sm md:text-base opacity-90 max-w-xl">When you are travelling with 20 or more passengers, comfort and coordination matter. We arrange group charter aircraft suited for corporate travel, events, or urgent situations.</p>
-        </div>
-        <div class="hidden md:block relative h-full">
-          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/360_F_1113073913_nO3He28x9tq8sopoFLo3xNZBvQ8tEN2M-89VXCs9ManLb93a4mnPeleQvBBfIQn.jpg" alt="Group Charter" class="w-full h-full object-cover rounded-lg shadow-2xl">
-        </div>
+      <div class="max-w-3xl text-white space-y-4">
+        <h1 class="text-3xl md:text-5xl font-bold">Group Charter Solutions</h1>
+        <p class="text-sm md:text-base opacity-90 max-w-xl">When you are travelling with 20 or more passengers, comfort and coordination matter. We arrange group charter aircraft suited for corporate travel, events, or urgent situations.</p>
       </div>
     </div>
   </section>
@@ -26,8 +21,7 @@ include 'includes/navbar.php';
       <h2 class="text-2xl md:text-3xl font-bold mb-12 text-primary">Explore Group Charter</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- ACMI -->
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col hover:shadow-2xl transition">
-          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/360_F_212955118_XPUOmE98LtmIih74iQskIqYPc7j45EoS%20-%20Copy-bxcCpnQIaUETuRkZwSgHu47R0UXIZO.jpg" class="h-48 w-full object-cover">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col hover:shadow-2xl transition border border-slate-100">
           <div class="p-6 grow">
             <h3 class="text-xl font-bold mb-3">ACMI Leasing</h3>
             <p class="text-slate-600 text-sm mb-6">Complete range of short and long-term Aircraft, Crew, Maintenance and Insurance leasing solutions.</p>
@@ -35,8 +29,7 @@ include 'includes/navbar.php';
           </div>
         </div>
         <!-- Events -->
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col hover:shadow-2xl transition">
-          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/music%20event-nuTxIP8fzAWYjtDrkfulJfwUKdcokz.jpg" class="h-48 w-full object-cover">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col hover:shadow-2xl transition border border-slate-100">
           <div class="p-6 grow">
             <h3 class="text-xl font-bold mb-3">Events Charter</h3>
             <p class="text-slate-600 text-sm mb-6">Organize a charter to your next corporate event, saving time and money of commercial flights.</p>
@@ -44,8 +37,7 @@ include 'includes/navbar.php';
           </div>
         </div>
         <!-- Sports -->
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col hover:shadow-2xl transition">
-          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/charter%20group%20plane-ESOE4Avo3Lg7CNUb7bIIY2z8JdFvHd.jpg" class="h-48 w-full object-cover">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col hover:shadow-2xl transition border border-slate-100">
           <div class="p-6 grow">
             <h3 class="text-xl font-bold mb-3">Sports Team Charter</h3>
             <p class="text-slate-600 text-sm mb-6">Providing comfort, safety, and on-time service for teams to ensure they are prepared to win.</p>
