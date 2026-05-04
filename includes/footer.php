@@ -44,7 +44,7 @@
         <ul class="space-y-3">
           <li><a href="/acmi-leasing.php" class="text-sm text-slate-400 hover:text-primary transition">ACMI Leasing</a></li>
           <li><a href="/events-charter-concepts.php" class="text-sm text-slate-400 hover:text-primary transition">Events Charter</a></li>
-          <li><a href="/sports-teams-charter.php" class="text-sm text-slate-400 hover:text-primary transition">Sports Teams Charter</a></li>
+          <li><a href="/sports-team-charter.php" class="text-sm text-slate-400 hover:text-primary transition">Sports Team Charter</a></li>
         </ul>
       </div>
 

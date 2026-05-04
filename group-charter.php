@@ -25,7 +25,7 @@ include 'includes/navbar.php';
           <div class="p-6 grow">
             <h3 class="text-xl font-bold mb-3">ACMI Leasing</h3>
             <p class="text-slate-600 text-sm mb-6">Complete range of short and long-term Aircraft, Crew, Maintenance and Insurance leasing solutions.</p>
-            <a href="/acmi-leasing" class="text-primary font-bold inline-flex items-center gap-2 hover:gap-3 transition-all">Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+            <a href="/acmi-leasing.php" class="text-primary font-bold inline-flex items-center gap-2 hover:gap-3 transition-all">Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
           </div>
         </div>
         <!-- Events -->
@@ -33,7 +33,7 @@ include 'includes/navbar.php';
           <div class="p-6 grow">
             <h3 class="text-xl font-bold mb-3">Events Charter</h3>
             <p class="text-slate-600 text-sm mb-6">Organize a charter to your next corporate event, saving time and money of commercial flights.</p>
-            <a href="/events-charter-concepts" class="text-primary font-bold inline-flex items-center gap-2 hover:gap-3 transition-all">Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+            <a href="/events-charter-concepts.php" class="text-primary font-bold inline-flex items-center gap-2 hover:gap-3 transition-all">Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
           </div>
         </div>
         <!-- Sports -->
@@ -41,7 +41,7 @@ include 'includes/navbar.php';
           <div class="p-6 grow">
             <h3 class="text-xl font-bold mb-3">Sports Team Charter</h3>
             <p class="text-slate-600 text-sm mb-6">Providing comfort, safety, and on-time service for teams to ensure they are prepared to win.</p>
-            <a href="/sports-team-charter" class="text-primary font-bold inline-flex items-center gap-2 hover:gap-3 transition-all">Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+            <a href="/sports-team-charter.php" class="text-primary font-bold inline-flex items-center gap-2 hover:gap-3 transition-all">Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
           </div>
         </div>
       </div>
