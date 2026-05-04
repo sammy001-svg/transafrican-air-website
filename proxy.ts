@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const response = NextResponse.next()
 
   // Content Security Policy
@@ -36,13 +36,13 @@ export function middleware(request: NextRequest) {
     'geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()'
   )
 
-  // Enforce HTTPS (though Vercel does this automatically)
+  // Enforce HTTPS
   response.headers.set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload')
 
   return response
 }
 
-// Apply middleware to all routes except public assets
+// Apply proxy to all routes except public assets
 export const config = {
   matcher: [
     /*

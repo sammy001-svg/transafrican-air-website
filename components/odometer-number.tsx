@@ -30,7 +30,7 @@ export function OdometerNumber({ value, className = '' }: OdometerNumberProps) {
     const suffix = value.substring(numericMatch[0].length)
     const obj = { value: 0 }
 
-    gsap.to(obj, {
+    const t = gsap.to(obj, {
       value: finalValue,
       duration: 2.5,
       scrollTrigger: {
@@ -46,7 +46,8 @@ export function OdometerNumber({ value, className = '' }: OdometerNumberProps) {
     })
 
     return () => {
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill())
+      t.scrollTrigger?.kill()
+      t.kill()
     }
   }, [value])
 

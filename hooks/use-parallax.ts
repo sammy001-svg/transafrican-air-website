@@ -18,7 +18,7 @@ export function useParallax(options: ParallaxOptions = {}) {
   useEffect(() => {
     if (!elementRef.current) return
 
-    gsap.to(elementRef.current, {
+    const t = gsap.to(elementRef.current, {
       y: reverse ? 100 * speed : -100 * speed,
       scrollTrigger: {
         trigger: elementRef.current,
@@ -30,7 +30,8 @@ export function useParallax(options: ParallaxOptions = {}) {
     })
 
     return () => {
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill())
+      t.scrollTrigger?.kill()
+      t.kill()
     }
   }, [speed, reverse])
 

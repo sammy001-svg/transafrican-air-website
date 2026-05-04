@@ -15,23 +15,11 @@ export default function AboutSection() {
   useEffect(() => {
     if (!contentRef.current || !sectionRef.current) return
 
-    const content = contentRef.current
-    const section = sectionRef.current
+    const ctx = gsap.context(() => {
+      // Any additional animations can go here
+    }, sectionRef)
 
-    // Create sticky effect with GSAP ScrollTrigger
-    gsap.to(content, {
-      scrollTrigger: {
-        trigger: section,
-        start: "top top",
-        end: "bottom center",
-        pin: true,
-        pinSpacing: false,
-      },
-    })
-
-    return () => {
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill())
-    }
+    return () => ctx.revert()
   }, [])
 
   return (
@@ -43,7 +31,7 @@ export default function AboutSection() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Content - Sticky */}
-          <div ref={contentRef} className="space-y-6">
+          <div ref={contentRef} className="space-y-6 sticky top-24 self-start">
             <MaskedTextReveal
               as="h2"
               className="text-4xl md:text-5xl font-bold text-foreground text-balance"
