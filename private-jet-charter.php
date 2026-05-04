@@ -26,7 +26,7 @@ include 'includes/navbar.php';
           <div class="p-6">
             <h3 class="font-bold text-lg mb-2">Private Jet Luxury</h3>
             <p class="text-slate-500 text-sm mb-4">Experience flexibility with exclusive private jet charters.</p>
-            <a href="/private-jets-guide" class="text-primary font-bold text-sm inline-flex items-center gap-1">LEARN MORE <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+            <a href="/private-jets-guide.php" class="text-primary font-bold text-sm inline-flex items-center gap-1">LEARN MORE <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
           </div>
         </div>
         <!-- Official Visits -->
