@@ -131,6 +131,15 @@ include 'includes/navbar.php';
       </div>
   </section>
 
+  <!-- Weekly Freighter Service Schedule -->
+  <section class="py-16 bg-white border-y border-slate-200">
+      <div class="container mx-auto px-4">
+          <div class="max-w-6xl mx-auto rounded-2xl overflow-hidden shadow-2xl border border-slate-100 hover:shadow-3xl transition-shadow duration-300">
+              <img src="/public/Transafrica.jpg" alt="Transafrican Air Weekly Freighter Service Schedule" class="w-full h-auto object-cover">
+          </div>
+      </div>
+  </section>
+
   <!-- CTA Banner -->
   <section class="py-16 md:py-24">
       <div class="container mx-auto px-4">
